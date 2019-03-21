@@ -25,7 +25,7 @@ app.use(compression());
 app.use(bodyParser.urlencoded({
   extended: true,
 }));
-app.engine('handlbars', expressHandlebars({ defaultLayout: 'main' }));
+app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/../views`);
 app.use(cookieParser());
